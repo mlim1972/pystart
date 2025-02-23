@@ -42,3 +42,17 @@ VS Code should have the following extensions:
 If you prefer to use DevContainer, you just need to install the DevContainer extension and all necessary extensions will be taken care for you.
 Follow the instructions from the [DevContainer site](https://code.visualstudio.com/docs/devcontainers/tutorial).
 
+# Running in Codespaces
+To run the FastAPI server, run the following command below. This command will reload the server as you make changes to the code.
+```
+uvicorn main:app --reload
+```
+
+Once you run it, you will see a pop-up window that will make your application available to the outside. Click on "Open in browser" button to open in your browser:
+![](./docs/images/running.png?raw=true)
+
+If the pop-up dissapear before you can click on it, you can click on the "PORTS" tab nad click on the "Open in browser" button as you hover the URL as shown below:
+![](./docs/images/running-manually.png?raw=true)
+
+After you enable the port to be access via your browser, you will see your browser open to the application. You can now use the URL the browser points to for your API access.
+![](./docs/images/running-browser.png?raw=true)
